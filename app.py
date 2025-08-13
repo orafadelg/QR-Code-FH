@@ -1,22 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-App Streamlit – Gerador de URL + QR Code para SurveyMonkey
----------------------------------------------------------
-
-O que faz:
-- Permite digitar `survey_code`, `store_id` e `order_id`.
-- Gera automaticamente a URL final do survey com parâmetros (query string).
-- Opcional: inclui timestamp e assinatura HMAC (sig) em "Avançado".
-- Gera um QR Code funcional da URL final e permite baixar PNG/SVG.
-
-Como rodar:
-    pip install streamlit qrcode Pillow
-    streamlit run app.py
-
-Observações:
-- `survey_code` é o sufixo após /r/ (ex.: https://pt.surveymonkey.com/r/9B9GS555 -> "9B9GS555").
-- Parâmetros padrão: store_id, order_id, (opcional) ts, sig.
-"""
 
 import io
 import hmac
