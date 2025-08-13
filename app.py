@@ -128,7 +128,7 @@ if gen:
     png_bytes = gen_qr_bytes(url_final, as_svg=False)
     svg_bytes = gen_qr_bytes(url_final, as_svg=True)
 
-    st.image(png_bytes, caption="QR Code – PNG", use_column_width=True)
+    st.image(png_bytes, caption="QR Code – PNG", use_container_width=True)
 
     st.download_button(
         label="⬇️ Baixar PNG",
